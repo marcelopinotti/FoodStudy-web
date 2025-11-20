@@ -1,0 +1,135 @@
+/* -----------------------------------------------------
+   ESTILO PROFISSIONAL - TEMA ALARANJADO FOODSTUDY
+------------------------------------------------------ */
+
+/* Paleta principal */
+:root {
+    --cor-primaria: #ff7f27;   /* laranja vibrante */
+    --cor-secundaria: #4CAF50; /* verde FoodStudy */
+    --cor-escura: #333;
+    --cor-clara: #fff;
+    --cor-fundo: #fdf7f2;
+}
+
+body {
+    background: var(--cor-fundo);
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+/* Navbar */
+.navbar {
+    background: var(--cor-primaria);
+}
+
+.navbar-brand {
+    color: white !important;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.nav-link {
+    color: white !important;
+    font-weight: 500;
+}
+
+/* Header Hero Section */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 10%;
+}
+
+.hero-text {
+    max-width: 50%;
+}
+
+.hero-text h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    color: var(--cor-escura);
+}
+
+.hero-text span {
+    color: var(--cor-primaria);
+}
+
+.hero-text p {
+    color: #555;
+    font-size: 1.1rem;
+    margin-top: 10px;
+}
+
+.hero-btn {
+    margin-top: 30px;
+}
+
+.hero-btn a {
+    padding: 15px 35px;
+    background: var(--cor-primaria);
+    color: white;
+    border-radius: 40px;
+    font-size: 1.1rem;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.hero-btn a:hover {
+    background: #e46d1e;
+    transform: scale(1.05);
+}
+
+/* Hero Ilustração */
+.hero img {
+    width: 45%;
+    animation: flutuar 4s ease-in-out infinite;
+}
+
+@keyframes flutuar {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-12px);}
+    100% { transform: translateY(0px); }
+}
+
+/* Seção de Destaques */
+.features {
+    padding: 80px 10%;
+    text-align: center;
+}
+
+.features h2 {
+    font-size: 2.3rem;
+    font-weight: 800;
+    margin-bottom: 40px;
+    color: var(--cor-escura);
+}
+
+.feature-card {
+    background: white;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 7px 20px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+.feature-icon {
+    font-size: 3rem;
+    color: var(--cor-primaria);
+}
+
+/* Rodapé */
+footer {
+    background: var(--cor-escura);
+    padding: 20px;
+    text-align: center;
+    color: white;
+    margin-top: 60px;
+}
